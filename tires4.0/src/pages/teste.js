@@ -94,17 +94,17 @@ export default function Teste() {
 			<button onClick={onClick}>enviar</button>
 			<button onClick={addForm}>+</button>
             {result
-                .sort((a,b) => a.price - b.price)
+                .sort((a,b) => a.result - b.result)
                 .map(
 				({ result, marca, km, price }, index) =>
-					(price, marca, km) && (
-						<div key={index}>
-							<h3>{marca}</h3>
-							<h3>{km}</h3>
-							<h3>{price}</h3>
-							<h3>{result}</h3>
+					(price && marca && km)? (
+						<div key={index} className="result-div">
+							<h3>Marca:{marca}</h3>
+							<h3>Km:{km}</h3>
+							<h3>Preço:{price}</h3>
+							<h3>Valor Por Km:{result}</h3>
 						</div>
-					),
+					) : <p></p>,
 			)}
 		</>
 	);
