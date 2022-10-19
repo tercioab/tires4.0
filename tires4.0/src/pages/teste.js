@@ -98,11 +98,12 @@ export default function Teste() {
                 .map(
 				({ result, marca, km, price }, index) =>
 					(price && marca && km)? (
-						<div key={index} className="result-div">
+						<div  key={index} className='result-div' >
 							<h3>Marca:{marca}</h3>
 							<h3>Km:{km}</h3>
 							<h3>Preço:{price}</h3>
-							<h3>Valor Por Km:{result}</h3>
+								<h3 id={`l${index}`} >Valor Por Km:{result}</h3>
+		
 						</div>
 					) : <p></p>,
 			)}
