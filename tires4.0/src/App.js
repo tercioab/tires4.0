@@ -1,10 +1,11 @@
-import Teste from "./pages/teste";
+import { Route } from "react-router-dom";
+import PorKm from "./pages/PorKm";
 
 function App() {
   return ( 
-    <div>
-      <Teste />
-    </div>
+    <> 
+      <Route exact path="/" component={PorKm} />
+    </>
   );
 }
 

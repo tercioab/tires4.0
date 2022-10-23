@@ -1,6 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500&display=swap');
+
+* {
+  font-family: 'Anybody', cursive;
+}
+
 .result-div {
     display: flex;
+    justify-content: center;
     gap: 1rem;
+}
+
+.form-dados {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-master {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: max-content;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
 }
 
 

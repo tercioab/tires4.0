@@ -1,4 +1,4 @@
-export default function Input({ marcaValue, priceValue, kmValue, func }) {
+export default function Input({ marcaValue, priceValue, kmValue, func, ph, phText }) {
 	return (
 		<>
 			<label htmlFor='MARCA'>
@@ -24,10 +24,10 @@ export default function Input({ marcaValue, priceValue, kmValue, func }) {
 				/>
 			</label>
 			<label htmlFor='KM'>
-				KM
+				{phText}
 				<input
 					id='KM'
-					placeholder='digite a kilometragem'
+					placeholder={ph}
 					type='number'
 					name='km'
 					value={kmValue}
