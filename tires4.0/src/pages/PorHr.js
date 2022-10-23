@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Input from "../components/Inputs";
 
-export default function PorKm() {
+export default function PorHr() {
 	const [form, setform] = useState([
 		{
 			marca: "",
@@ -74,8 +74,8 @@ export default function PorKm() {
 					<form key={key} onSubmit={prevent} className='form-dados'>
 						{index}
 						<Input
-							phText='KM'
-							ph='Digite a kilometragem'
+							phText='HORA'
+							ph='Digite a HORA'
 							kmValue={km}
 							priceValue={price}
 							marcaValue={marca}
@@ -96,9 +96,9 @@ export default function PorKm() {
 						km && (
 							<div key={index} className='result-div'>
 								<h3>Marca:{marca}</h3>
-								<h3>Km:{km}</h3>
+								<h3>HORAS:{km}</h3>
 								<h3>Preço:{price}</h3>
-								<h3 id={`l${index}`}>Valor Por Km:{result}</h3>
+								<h3 id={`l${index}`}>Valor Por Hora:{result}</h3>
 							</div>
 						),
 				)}
